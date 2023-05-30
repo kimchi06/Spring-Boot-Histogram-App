@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="histogram.css">
+    <script defer src="calculate.js"></script>
+</head>
+
+<body class="page" onload="generateHistogram()">
+    <h1>Histogram Generator</h1>
+
+    <div class="container">
+        <div id="box1">
+            <h2><span style="color: rgb(189,66,48)">Lower bounds</span></h2>
+            <table class="tables" style="border-spacing: 10px;">
+                <tr>
+                    <td style="width: 40%"><label>Max</label></td>
+                    <td style="width: 60%"><input class="inputbox" type="text" value="100.00"></td>
+                </tr>
+                <tr>
+                    <td><label>A+</label></td>
+                    <td><input class="inputbox" type="text" value="95.00"></td>
+                </tr>
+                <tr>
+                    <td><label>A</label></td>
+                    <td><input class="inputbox" type="text" value="90.00"></td>
+                </tr>
+                <tr>
+                    <td><label>A-</label></td>
+                    <td><input class="inputbox" type="text" value="85.00"></td>
+                </tr>
+                <tr>
+                    <td><label>B+</label></td>
+                    <td><input class="inputbox" type="text" value="80.00"></td>
+                </tr>
+                <tr>
+                    <td><label>B</label></td>
+                    <td><input class="inputbox" type="text" value="75.00"></td>
+                </tr>
+                <tr>
+                    <td><label>B-</label></td>
+                    <td><input class="inputbox" type="text" value="70.00"></td>
+                </tr>
+                <tr>
+                    <td><label>C+</label></td>
+                    <td><input class="inputbox" type="text" value="65.00"></td>
+                </tr>
+                <tr>
+                    <td><label>C</label></td>
+                    <td><input class="inputbox" type="text" value="60.00"></td>
+                </tr>
+                <tr>
+                    <td><label>C-</label></td>
+                    <td><input class="inputbox" type="text" value="55.00"></td>
+                </tr>
+                <tr>
+                    <td><label>D</label></td>
+                    <td><input class="inputbox" type="text" value="50.00"></td>
+                </tr>
+                <tr>
+                    <td><label>F</label></td>
+                    <td><input class="inputbox" type="text" value="0.00"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="box2">
+            <h2><span style="color: rgb(189,66,48)">Histogram</span></h2>
+            <table class="tables">
+                <tr>
+                    <td style="width: 40%"><label>A+</label></td>
+                    <td id="ap"></td>
+                </tr>
+                <tr>
+                    <td><label>A</label></td>
+                    <td id="a"></td>
+                </tr>
+                <tr>
+                    <td><label>A-</label></td>
+                    <td id="am"></td>
+                </tr>
+                <tr>
+                    <td><label>B+</label></td>
+                    <td id="bp"></td>
+                </tr>
+                <tr>
+                    <td><label>B</label></td>
+                    <td id="b"></td>
+                </tr>
+                <tr>
+                    <td><label>B-</label></td>
+                    <td id="bm"></td>
+                </tr>
+                <tr>
+                    <td><label>C+</label></td>
+                    <td id="cp"></td>
+                </tr>
+                <tr>
+                    <td><label>C</label></td>
+                    <td id="c"></td>
+                </tr>
+                <tr>
+                    <td><label>C-</label></td>
+                    <td id="cm"></td>
+                </tr>
+                <tr>
+                    <td><label>D</label></td>
+                    <td id="d"></td>
+                </tr>
+                <tr>
+                    <td><label>F</label></td>
+                    <td id="f"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="box3">
+            <h2><span style="color: rgb(189, 48, 48)">Add new grade</span></h2>
+            <label><span style="font-weight: bold;">New grade: </span></label><br><br>
+            <input id="addInput" type="text" value="" style="width: 120px; height: 25px;">
+            <button id="addButton" onclick="addGrade()" style="width: 80px; height: 25px;">Submit</button>
+        </div>
+        <div id="box4">
+            <h2><span style="color: rgb(189,66,48)">Errors</span></h2>
+            <p id="errorMsg">No errors detected</p>
+        </div>
+    </div>
+</body>

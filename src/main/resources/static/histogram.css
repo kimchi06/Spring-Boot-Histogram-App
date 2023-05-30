@@ -1,0 +1,70 @@
+.page {
+    font-family: "Sans-serif";
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#box1 {
+    background-color: rgb(233, 239, 241);
+    border-radius: 5px;
+    padding: 0px 10px 10px 20px;
+    margin: 5px;    
+    height: 650px;
+    float: left;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+
+#box2 {
+    background-color: rgb(233, 239, 241);
+    border-radius: 5px;
+    padding: 0px 10px 10px 20px;
+    margin: 5px;    
+    height: 400px;
+    float: left;
+    grid-row: 1 / 4;
+    grid-column: 2 / 2;
+}
+
+#box3 {
+    background-color: rgb(233, 239, 241);
+    border-radius: 5px;
+    padding: 0px 10px 10px 20px;
+    margin: 5px;    
+    height: 225px;
+    float: left;
+    grid-row: 2 / 4;
+    grid-column: 2 / 2;
+}
+
+#box4 {
+    background-color: rgb(233, 239, 241);
+    border-radius: 5px;
+    padding: 0px 10px 10px 20px;
+    margin: 5px;    
+    height: 150px;
+    float: left;
+    grid-row: 4 / 4;
+    grid-column: 1 / 2;
+}
+
+.inputbox {
+    height: 25px;
+    width: 80px;
+}
+
+.tables {
+    padding: 10px;
+    margin: 10px;
+    border-spacing: 5px;
+    width: 100%;
+}
+
+td {
+    font-weight: bold;
+}
+
